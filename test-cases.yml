@@ -74,7 +74,7 @@
     Сайт должен быть протестирован на совместимость с последними версиями браузеров.
   prerequisites:
     Установлены последние версии бразуеров Google Chrome, Firefox, Яндекс Браузер
-  test-data:  Сайт = https://hexlet-products-store.vercel.app/products/1
+  test-data: Сайт = https://hexlet-products-store.vercel.app/products/1
   steps:
     - Открываем сайт  в Яндекс браузере
     - Открываем сайт в браузере Google Chrome
@@ -82,3 +82,54 @@
   expected-result:
     Сайт открывается
   
+- summary:
+    Удаление товара из корзины
+  requirement:
+    На странице корзины пользователь может удалить товар из корзины
+  prerequisites:
+    Добавлен товар в корзину
+  test-data: Сайт = https://hexlet-products-store.vercel.app/products/1
+  steps:
+    - Заходим в корзину
+    - Нажимаем кнопку "Удалить"
+  expected-result:
+    Товар из корзины удаляется
+
+- summary:
+    Оформление заказа
+  requirement:
+    Оформление заказа
+  prerequisites:
+    Добавлен товар в корзину
+  test-data: Сайт = https://hexlet-products-store.vercel.app/products/1
+  steps: 
+    - Заходим в корзину
+    - Нажимаем кнопку "Оформить заказ"
+  expected-result:
+    Заказ успешно оформлен
+
+- summary:
+    После оформления заказа корзина очищается
+  requirement:
+    После оформления заказа корзина очищается
+  prerequisites:
+    Добавлен товар в корзину
+  test-data: Сайт = https://hexlet-products-store.vercel.app/products/1
+  steps:
+  - Заходим в козину
+  - Оформляем заказ
+  expected-result:
+    Заказ успешно оформлен, корзина пустая
+
+- summary:
+    Проверка ссылки на категорию товара
+  requirement:
+    На странице товара пользователь может перейти по ссылке на категорию товара
+  prerequisites:
+    Открыт сайт магазина
+  test-data: Сайт = https://hexlet-products-store.vercel.app/products/1
+  steps:
+    - Открываем страницу товара
+    - Нажимаем на ссылку с названием категории товара
+  expected-result:
+    Переходим по ссылке на категорию товара
