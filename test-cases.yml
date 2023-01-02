@@ -116,8 +116,8 @@
     Добавлен товар в корзину
   test-data: Сайт = https://hexlet-products-store.vercel.app/products/1
   steps:
-  - Заходим в козину
-  - Оформляем заказ
+    - Заходим в козину
+    - Оформляем заказ
   expected-result:
     Заказ успешно оформлен, корзина пустая
 
