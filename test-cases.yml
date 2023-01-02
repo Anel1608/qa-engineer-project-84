@@ -20,8 +20,7 @@
     Пользователь должен иметь возможность искать товары по ключевому слову или категории.
   prerequisites:
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-  test-data:
-    Категория = motorcycle Ключевое слово = electric
+  test-data: Категория = motorcycle Ключевое слово = electric
   steps:
     - Вводим в форму "Поиск" ключевое слово
     - Выбираем категорию
@@ -34,8 +33,7 @@
     Пользователь должен иметь возможность фильтровать товары по цене
   prerequisites:
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-  test-data:
-    Поиск = iphone 
+  test-data: Поиск = iphone 
   steps:
     - Вводим в форму поиска "iphone"
     - Вводим цену от 0 до 10000
@@ -48,7 +46,7 @@
     Сайт должен иметь мобильную версию.
   prerequisites:
     Открыта страница магазина https://hexlet-products-store.vercel.app/
-  test-data:
+  test-data: Сайт = https://hexlet-products-store.vercel.app/products/1
   steps:
     - Открываем DevTools
     - Выбираем мобильную версию сайта
