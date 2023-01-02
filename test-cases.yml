@@ -144,3 +144,31 @@
   expected-result:
     В каталоге отображаются товары выбранного цвета
   
+  
+- summary: 
+    Проверка удобства расположения кнопки "Previous"
+  requirement:
+    Веб-сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Открыта страница магазина https://hexlet-products-store.vercel.app/
+  test-data: Сайт = https://hexlet-products-store.vercel.app/products/1
+  steps:
+    - Открываем первую страницу каталога
+  expected-result:
+    На первой странице кнопка перелистывания страниц только "Next" 
+    
+- summary: 
+    Проверка удобства расположения кнопки "Next"
+  requirement:
+    Веб-сайт должен быть разработан с учетом удобства использования
+  prerequisites:
+    Открыта страница магазина https://hexlet-products-store.vercel.app/
+  test-data: Сайт = https://hexlet-products-store.vercel.app/products/1
+  steps:
+    - Открываем первую страницу каталога
+    - Листаем до последней страницы 
+  expected-result:
+    На последней странице кнопка перелистывания страниц только "Previous" 
+    
+
+    
