@@ -64,3 +64,17 @@ test-cases:
           3. Перейти на страницу корзины https://hexlet-products-store.vercel.app/cart
         expected-result:
           Расположение кнопки "удалить" напротив каждого товара меняется
+
+      - summary:
+          В корзине при изменении на "русский язык" не переводится сокращение QTY
+        environment:
+          Яндекс Браузер 22.11.3.818 (Официальная сборка) (64-bit)
+          Google Chrome 108.0.5359.125 (Официальная сборка) (64-bit)
+          Firefox Browser 108.0.1 (Официальная сборка) (64-bit)
+        steps-to-reproduce:
+          1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
+          2. Добавить товар в корзину
+          3. Перейти на страницу корзины https://hexlet-products-store.vercel.app/cart
+          4. Изменить язык на "русский"
+        expected-result:
+          Сокращение QTY не переводится на русский язык
