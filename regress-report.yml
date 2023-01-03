@@ -51,4 +51,16 @@ test-cases:
       Проверка удобства расположения кнопки "Next"
     status: pass
     
-    bugreports: []  
+    bugreports: 
+      - summary:
+          Нет единого стиля отображения кнопки "удалить" в корзине
+        environment:
+          Яндекс Браузер 22.11.3.818 (Официальная сборка) (64-bit)
+          Google Chrome 108.0.5359.125 (Официальная сборка) (64-bit)
+          Firefox Browser 108.0.1 (Официальная сборка) (64-bit)
+        steps-to-reproduce:
+          1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
+          2. Добавить товары в корзину
+          3. Перейти на страницу корзины https://hexlet-products-store.vercel.app/cart
+        expected-result:
+          Расположение кнопки "удалить" напротив каждого товара меняется
