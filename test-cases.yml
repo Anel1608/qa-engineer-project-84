@@ -28,7 +28,7 @@
     В каталоге отображаются смартфоны iPhone
     
 - summary:
-    Проверка фильтров
+    Проверка фильтрации товара по цене
   requirement:
     Пользователь должен иметь возможность фильтровать товары по цене
   prerequisites:
@@ -40,18 +40,6 @@
   expected-result:
     В каталоге отображаются айфоны стоимость от 0 до 10000
     
-- summary:
-    Сайт должен иметь мобильную версию.
-  requirement:
-    Сайт должен иметь мобильную версию.
-  prerequisites:
-    Открыта страница магазина https://hexlet-products-store.vercel.app/
-  test-data: Сайт = https://hexlet-products-store.vercel.app/products/1
-  steps:
-    - Открываем DevTools
-    - Выбираем мобильную версию сайта
-  expected-result:
-    Сайт переключается на мобильную версию
     
 - summary:
     Проверка возможности просматривать товары и информацию о них
@@ -144,31 +132,5 @@
   expected-result:
     В каталоге отображаются товары выбранного цвета
   
-  
-- summary: 
-    Проверка удобства расположения кнопки "Previous"
-  requirement:
-    Веб-сайт должен быть разработан с учетом удобства использования
-  prerequisites:
-    Открыта страница магазина https://hexlet-products-store.vercel.app/
-  test-data: Сайт = https://hexlet-products-store.vercel.app/products/1
-  steps:
-    - Открываем первую страницу каталога
-  expected-result:
-    На первой странице кнопка перелистывания страниц только "Next" 
-    
-- summary: 
-    Проверка удобства расположения кнопки "Next"
-  requirement:
-    Веб-сайт должен быть разработан с учетом удобства использования
-  prerequisites:
-    Открыта страница магазина https://hexlet-products-store.vercel.app/
-  test-data: Сайт = https://hexlet-products-store.vercel.app/products/1
-  steps:
-    - Открываем первую страницу каталога
-    - Листаем до последней страницы 
-  expected-result:
-    На последней странице кнопка перелистывания страниц только "Previous" 
-    
 
     
