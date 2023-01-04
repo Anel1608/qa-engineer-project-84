@@ -43,13 +43,7 @@ test-cases:
       Пользователь должен иметь возможность фильтровать товары по цвету
     status: fail
   
-  - summary: 
-      Проверка удобства расположения кнопки "Previous"
-    status: pass
   
-  - summary: 
-      Проверка удобства расположения кнопки "Next"
-    status: pass
     
     bugreports: 
       - summary:
