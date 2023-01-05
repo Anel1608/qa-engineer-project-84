@@ -1,6 +1,6 @@
 test-cases:
   - summary:
-      Добавление товара в корзину
+      Пользователь должен иметь возможность добавлять товары в корзину
     status: pass
   
   - summary: 
@@ -9,10 +9,6 @@ test-cases:
   
   - summary:
       Пользователь должен иметь возможность фильтровать товары по цене
-    status: pass
-  
-  - summary:
-      Сайт должен иметь мобильную версию.
     status: pass
   
   - summary:
@@ -28,7 +24,7 @@ test-cases:
      status: fail
   
   - summary:
-     Оформление заказа
+      Проверка успешного оформления заказа
     status: pass
   
   - summary:
@@ -53,23 +49,21 @@ test-cases:
           Google Chrome 108.0.5359.125 (Официальная сборка) (64-bit)
           Firefox Browser 108.0.1 (Официальная сборка) (64-bit)
         steps-to-reproduce:
-          1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
-          2. Добавить товары в корзину
-          3. Перейти на страницу корзины https://hexlet-products-store.vercel.app/cart
+          1. Добавить товары в корзину
+          2. Перейти на страницу корзины https://hexlet-products-store.vercel.app/cart
         expected-result:
           Расположение кнопки "удалить" напротив каждого товара меняется
 
       - summary:
-          В корзине при изменении на "русский язык" не переводится сокращение QTY
+         Не переводится сокращение QTY в корзине при изменении на "русский язык" 
         environment:
           Яндекс Браузер 22.11.3.818 (Официальная сборка) (64-bit)
           Google Chrome 108.0.5359.125 (Официальная сборка) (64-bit)
           Firefox Browser 108.0.1 (Официальная сборка) (64-bit)
         steps-to-reproduce:
-          1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
-          2. Добавить товар в корзину
-          3. Перейти на страницу корзины https://hexlet-products-store.vercel.app/cart
-          4. Изменить язык на "русский"
+          1. Добавить товар в корзину
+          2. Перейти на страницу корзины https://hexlet-products-store.vercel.app/cart
+          3. Изменить язык на "русский"
         expected-result:
           Сокращение QTY не переводится на русский язык
       
@@ -80,10 +74,9 @@ test-cases:
           Google Chrome 108.0.5359.125 (Официальная сборка) (64-bit)
           Firefox Browser 108.0.1 (Официальная сборка) (64-bit)
         steps-to-reproduce:
-          1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
-          2. Добавить товар в корзину
-          3. Перейти на страницу корзины https://hexlet-products-store.vercel.app/cart
-          4. Нажать кнопку "очистить корзину"
-          5. Нажать кнопку "магазин"
+          1. Добавить товар в корзину
+          2. Перейти на страницу корзины https://hexlet-products-store.vercel.app/cart
+          3. Нажать кнопку "очистить корзину"
+          4. Нажать кнопку "магазин"
         expected-result:
           Удаленный товар отображается в корзине
